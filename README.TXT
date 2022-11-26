@@ -6,7 +6,7 @@
 
           Version 0.5  (built: Jun 20 2003)
 
-  Copyright © 2001-2003 Jonathan Roewen, Taras Glek
+  Copyright Â© 2001-2003 Jonathan Roewen, Taras Glek
 
             Licensed under the MIT License
 
@@ -118,5 +118,7 @@
  results. Solution is to either use <star/> or always
  state the parameters explicitly, such as:
  <star index="1"/> or <star index="1" />
-
+ 
+ 64 code revision done by Brian Ponnampalam brian2004 [at] hotmail.com
+ 
  The End
