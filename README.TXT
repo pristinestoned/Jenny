@@ -119,6 +119,7 @@
  state the parameters explicitly, such as:
  <star index="1"/> or <star index="1" />
  
- 64 code revision done by Brian Ponnampalam brian2004 [at] hotmail.com
+ 64 bit code revision done by Brian Ponnampalam 
+ brian2004 [at] hotmail.com
  
  The End
