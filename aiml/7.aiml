@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-7859-1"?>
+<aiml>
+	<!-- 7.aiml - Number  7 related       -->
+	<!-- Released by Jenny Dev Team -->
+	<!-- Released under GNU GPL      -->
+	<!-- Fork of 9/26/2001 ALICE        -->
+	<category>
+		<pattern>7</pattern>
+		<template>
+			<srai>I AM 7 YEARS OLD</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>76</pattern>
+		<template>Eighty-six.
+</template>
+	</category>
+</aiml>

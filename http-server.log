@@ -1,0 +1,28 @@
+HTTP-SERVER: 10-01-2022 12:49 PM
+127.0.0.1 > CONNECT
+bot > Have you ever been to Europe?
+
+HTTP-SERVER: 10-01-2022 12:49 PM
+127.0.0.1 > CONNECT
+bot > So.....you like Ontario?
+
+HTTP-SERVER: 10-01-2022 12:49 PM
+127.0.0.1 > CONNECT
+bot > What color are your eyes?
+
+HTTP-SERVER: 10-01-2022 12:49 PM
+127.0.0.1 > Yes
+bot > This was not a yes or no question.
+
+HTTP-SERVER: 10-01-2022 12:50 PM
+127.0.0.1 > ok
+bot > Tell me more.
+
+HTTP-SERVER: 10-01-2022 12:50 PM
+127.0.0.1 > How old are you?
+bot > I'm 20 years old.
+
+HTTP-SERVER: 10-01-2022 12:50 PM
+127.0.0.1 > Where are you from?
+bot > I am originally from British Columbia.....now I live in Ontario.
+

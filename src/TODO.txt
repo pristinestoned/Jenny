@@ -1,0 +1,50 @@
+Miscellaneous
+=============
+
+Add exception handling, which can then be logged. For example, need to trap stack overflow exception (due to infinite loop through <srai>).
+
+Fix path handling for platforms. Currently, this needs fixing.Mac is ':', Windows is '\', and Unix is '/'. Unix style slashes work on MacOS X, and Win2k/XP .. haven't tested on earlier Windows or MacOS yet.
+
+Update IRC:
+- Consider improving reconnect mechanism.
+- Provide aliases for IRC commands, as well as supporting raw IRC Protocol strings.
+
+Current Supported Aliases:
+/part (parts channel msg originated from)
+/part <channel>
+/msg <user> <msg>
+/privmsg <user> <msg>
+/quit
+/join <channel>
+
+Improve the <system> tag. Look into providing option to run command async with no output (output for async wouldn't be realistic in a simplistic stimulus-response environment) - this is the current behaviour for Windows .. would like for Unix based OS as well.
+
+Improve the substituter some more, such as trying to match the case of replaced text, such that an uppercase word is replaced with uppercase, etc.
+
+Add as many of remaining AIML 1.0 tags.
+These include:
+- <date> (can be achieved by calling the JS engine from C/C++ code .. ie: use JS Date object)
+- <that index="x,y"/> variant (what do the x and y represent?)
+- <gossip> (this tag is so bogus)
+- <javascript> for non-win32 platforms (merely a matter of compiling the SpiderMonkey library I think)
+- Possibly others that have been forgotten.
+
+Get wildcard support for loading files working. This is very important!
+
+Use the safe pointer wrapper for other pointer uses, such as Match, Nodemaster, and Responder. Although somewhat unnecessary, it'll help ensure memory leaks don't occur. I'm bad with delete, so this will be a good thing. Do this only when have time to change a whole lot of code ;-)
+
+Revamp the logging system. It needs a huge improvement, as well as lots of customisation options.
+
+Need to check the time functions, as I think the results are different between the platforms, with values being some magnitudes off.
+
+Research configuration options more to try and find a simple but fully featured configuration format. This will require more changes to the codebase to support any changes in the configuration format. Currently, it is too brittle .. any changes in configuration requirements will require changes in the data structures used to hold the information. A single data structure that can hold any amount of information would be desirable, as would be a number of helper functions to retrieve and set configuration data, such as getBool() and getInt(), etc.
+
+Track down problems with Socket API on Windows platforms. It is still buggy, and webserver refuses to work on Windows XP/IE6 (still not sure what the root of the problem is). Well, it's not confined to Windows .. there are other problems (BeOS: crash after IRC fails reconnection attempts - I think also applies to linux/bsd/MacOS X as well).
+
+Consider dealing with XML namespaces correctly, as specified in the AIML 1.0.1 draft specification (note: it is still a draft) .. it isn't necessary to abide by these rules, but it would probably be a good thing.
+
+Improve whitespace handling in XML, as it still isn't perfect, though a lot better than what it was previously.
+
+Provide option to use an XML/AIML Parser that gives basic error and warning messages .. ie: some syntax checking, balanced tag checking, etc. This should also help ensure parsing AIML files can continue with remaining document after detecting an error or two.
+
+"-DGUI -I/tmp/WxWindows-2.4.0/include/ --pipe -D_X86_=1 -DWIN32 -D_WIN32 -DWINVER=0x0400 -D__WIN95__ -D__GNUWIN32__ -D__WIN32__  -DSTRICT  -D__WXMSW__ -D__WINDOWS__

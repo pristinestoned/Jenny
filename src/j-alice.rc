@@ -1,0 +1,2 @@
+j_alice ICON DISCARDABLE  "j-alice.ico"
+#include "wx/msw/wx.rc"
